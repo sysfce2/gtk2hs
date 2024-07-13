@@ -11,3 +11,8 @@ cabal-dev
 *.swp
 *.*~
 .idea
+/gtk/output
+/cairo/output
+/gio/output
+/glib/output
+/pango/output

@@ -1,6 +1,6 @@
 cabal-version:  2.2
 Name:           gio
-Version:        0.13.10.0
+Version:        0.13.11.0
 License:        LGPL-2.1-only
 License-file:   COPYING
 Copyright:      (c) 2001-2010 The Gtk2Hs Team
@@ -17,7 +17,7 @@ Description:    GIO is striving to provide a modern, easy-to-use VFS API that si
                 Among other things that means using GObject.
                 It also means not cloning the POSIX API, but providing higher-level, document-centric interfaces.
 Category:       System
-Tested-With:    GHC == 9.8.1, GHC == 9.6.3, GHC == 9.4.7, GHC == 9.2.8, GHC==9.0.2, GHC==8.10.7, GHC==8.8.4, GHC==8.6.5, GHC==8.4.4, GHC==8.2.2, GHC==8.0.2, GHC==7.10.3, GHC==7.8.4, GHC==7.6.3
+Tested-With:    GHC == 9.10.1, GHC == 9.8.2, GHC == 9.6.6, GHC == 9.4.8, GHC == 9.2.8, GHC==9.0.2, GHC==8.10.7, GHC==8.8.4, GHC==8.6.5, GHC==8.4.4, GHC==8.2.2, GHC==8.0.2
 Extra-Source-Files: marshal.list
                     hierarchy.list
 
@@ -40,14 +40,14 @@ Source-Repository head
 
 custom-setup
   setup-depends: base >= 4.6 && < 5,
-                 Cabal >= 2.2 && < 3.11,
+                 Cabal >= 2.2 && < 3.13,
                  gtk2hs-buildtools >= 0.13.2.0 && < 0.14
 
 Library
         build-depends:  base >= 4 && < 5,
                         array < 0.6,
                         bytestring < 0.13,
-                        containers < 0.7,
+                        containers < 0.8,
                         mtl < 2.4,
                         glib >= 0.13.0.0 && < 0.14
 

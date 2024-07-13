@@ -1,4 +1,4 @@
-index-state: 2024-01-20T00:00:00Z
+index-state: 2024-07-11T00:00:00Z
 
 packages:
   tools/
@@ -7,5 +7,8 @@ packages:
   pango/
   gio/
   gtk/
+
+package gtk
+  flags: +have-quartz-gtk
 
 write-ghc-environment-files: never
